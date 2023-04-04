@@ -3,7 +3,6 @@ require("@nomiclabs/hardhat-etherscan")
 require("hardhat-deploy")
 require("solidity-coverage")
 require("hardhat-gas-reporter")
-require("hardhat-contract-sizer")
 require("dotenv").config()
 
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL || "https://eth-sepolia"
@@ -36,7 +35,9 @@ module.exports = {
         noColors: true,
         coinmarketcap: process.env.COINMARKETCAP_API_KEY,
     },
-    solidity: "0.8.18",
+    solidity: {
+        compilers: [{ version: "0.8.7" }, { version: "0.4.19" }],
+    },
     namedAccounts: {
         deployer: {
             default: 0,
