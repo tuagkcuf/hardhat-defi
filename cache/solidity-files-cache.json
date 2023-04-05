@@ -1,9 +1,138 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
+    "H:\\Programming\\crypto\\hardhat-defi\\contracts\\interfaces\\ILendingPool.sol": {
+      "lastModificationDate": 1680695881198,
+      "contentHash": "4ec9dbf5e80716c7cee9abe4edd1fd9c",
+      "sourceName": "contracts/interfaces/ILendingPool.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@aave/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol",
+        "@aave/protocol-v2/contracts/protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ILendingPool"
+      ]
+    },
+    "H:\\Programming\\crypto\\hardhat-defi\\node_modules\\@aave\\protocol-v2\\contracts\\interfaces\\ILendingPoolAddressesProvider.sol": {
+      "lastModificationDate": 1680614466795,
+      "contentHash": "a487bfd067ce6e71ddc7e9cc91302bae",
+      "sourceName": "@aave/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ILendingPoolAddressesProvider"
+      ]
+    },
+    "H:\\Programming\\crypto\\hardhat-defi\\node_modules\\@aave\\protocol-v2\\contracts\\protocol\\libraries\\types\\DataTypes.sol": {
+      "lastModificationDate": 1680614466664,
+      "contentHash": "2127b8d36674faba96bc703f72164a1a",
+      "sourceName": "@aave/protocol-v2/contracts/protocol/libraries/types/DataTypes.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DataTypes"
+      ]
+    },
     "H:\\Programming\\crypto\\hardhat-defi\\contracts\\interfaces\\IWeth.sol": {
-      "lastModificationDate": 1680615336105,
-      "contentHash": "45594b677414d6e322cf5e00c358ddd7",
+      "lastModificationDate": 1680695217511,
+      "contentHash": "2de29cf537b4c95191fa4ee76dd40150",
       "sourceName": "contracts/interfaces/IWeth.sol",
       "solcConfig": {
         "version": "0.4.19",
@@ -37,7 +166,7 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.4.19"
+        "0.4.19"
       ],
       "artifacts": [
         "IWeth"

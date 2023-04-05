@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.4.19;
+pragma solidity 0.4.19;
 
 interface IWeth {
     function allowance(address owner, address spender) external view returns (uint256 remaining);
@@ -19,11 +19,7 @@ interface IWeth {
 
     function transfer(address to, uint256 value) external returns (bool success);
 
-    function transferFrom(
-        address from,
-        address to,
-        uint256 value
-    ) external returns (bool success);
+    function transferFrom(address from, address to, uint256 value) external returns (bool success);
 
     function deposit() external payable;
 
