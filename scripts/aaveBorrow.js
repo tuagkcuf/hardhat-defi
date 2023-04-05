@@ -16,7 +16,7 @@ async function main() {
     console.log("Depositing...")
     await lendingPool.deposit(wethTokenAddress, AMOUNT, deployer, 0)
     console.log("Deposited...")
-    let { availableBorrowsETH, totalDebtETH } = await getBorrowUserData(lendingPool, deployer)
+    let { availableBorrowsETH } = await getBorrowUserData(lendingPool, deployer)
     const daiPrice = await getDaiPrice()
     const amountDaiToBorrow = availableBorrowsETH.toString() * 0.95 * (1 / daiPrice.toNumber())
     console.log(`You can borrow ${amountDaiToBorrow} DAI`)
